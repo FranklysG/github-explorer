@@ -1,5 +1,10 @@
+import { RepositoryList } from './components/RepositoryList';
 import './style/global.scss';
 
-export function App(){
-    return (<p>Hellow Word </p>);
+export function App() {
+  return (
+    <>
+      <RepositoryList />
+    </>
+    );
 }
