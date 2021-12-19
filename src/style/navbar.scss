@@ -1,0 +1,9 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: #161b22;
+
+    & {
+        padding: 20px;
+    }
+}

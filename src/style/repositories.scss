@@ -9,13 +9,16 @@ section.repository-list {
         list-style: none;
 
         li {
+            border-bottom: 0.1px solid #8a939d;
+            padding: 10px;
+
             & + li {
                 margin-top: 20px;
             }
 
             p {
                 font-size: 14px;
-                color: #444;
+                color: #8a939d;
                 margin-top: 8px;
             }
 
@@ -24,6 +27,17 @@ section.repository-list {
                 margin-top: 16px;
                 text-decoration: none;
                 color: #8257e6;
+            }
+
+            span {
+                display: flex;
+                justify-content: start;
+                margin-top: 10px;
+
+                svg {
+                    margin: 5px;
+                    color: #8a939d;
+                }
             }
         }
     }

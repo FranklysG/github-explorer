@@ -6,15 +6,16 @@ import '../style/repositories.scss';
 // https://api.github.com/users/franklysg
 // https://api.github.com/users/FranklysG/repos
 
-const repository = {
-  'name': 'Assiger',
-  'description': 'This is best',
-  'link': 'https://github.com/unform/unform'
+interface Repository {
+  id: number,
+  name: string,
+  description: string,
+  html_url: string
 };
 
 export function RepositoryList() {
 
-  const [reposiories, setReposiories] = useState([]);
+  const [reposiories, setReposiories] = useState<Repository[]>([]);
 
   useEffect(() => {
     fetch('https://api.github.com/users/FranklysG/repos').then(response => response.json()).then(data => setReposiories(data))
