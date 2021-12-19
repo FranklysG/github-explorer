@@ -3,9 +3,6 @@ import { RepositoryItem } from "./RepositoryItem";
 
 import '../style/repositories.scss';
 
-// https://api.github.com/users/franklysg
-// https://api.github.com/users/FranklysG/repos
-
 interface Repository {
   id: number,
   name: string,
